@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>404</title>
+
+<style>
+  body{
+    background:black;
+    color:white;
+    font-family: Arial, sans-serif;
+    text-align:center;
+    padding-top:100px;
+    margin:0;
+  }
+
+  .dim{
+    opacity:0.6;
+  }
+
+  .secret{
+    font-size: 28px;
+  }
+
+  .error404{
+    font-size: 34px;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="contenido">
+
+  <!-- ETAPA 1 -->
+  <h1 class="secret">Contenido secreto</h1>
+  <p class="dim">La información perteneciente al artista ha sido cifrada</p>
+
+</div>
+
+<script>
+setTimeout(() => {
+
+  // ETAPA 2 (404)
+  document.getElementById("contenido").innerHTML = `
+    <h1 class="error404">404</h1>
+    <p>Este contenido ya no está disponible</p>
+  `;
+
+}, 120);
+</script>
+
+</body>
+</html>
